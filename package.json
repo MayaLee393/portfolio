@@ -1,29 +1,24 @@
 {
-  "name": "react-portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://mayalee393.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-brands-svg-icons": "^6.5.2",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
-    "animate.css": "^4.1.1",
-    "gsap-trial": "^3.12.5",
-    "loaders.css": "^0.1.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-leaflet": "^4.2.1",
-    "react-loaders": "^3.0.1",
-    "react-router-dom": "^6.24.1",
-    "react-scripts": "^5.0.1",
-    "sass": "^1.77.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.3.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.16",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
