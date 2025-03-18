@@ -36,7 +36,7 @@ const Navbar = () => {
 
         // Update document title
         document.title = pageTitles[location.pathname] || "Maya Lee";
-        changeFavicon("/icon.png");
+        changeFavicon(`${process.env.PUBLIC_URL}/icon.png`);
     }, [location.pathname]);
 
     useEffect(() => {
@@ -55,7 +55,7 @@ const Navbar = () => {
 
     return (
         <Nav isVisible={showNavbar}> {/* Use isVisible here */}
-            <NavBrand to="/"><img src="/icon.png" alt="Maya Lee logo" style={{ width: '30px', marginRight: '10px' }} />Maya Lee</NavBrand>
+            <NavBrand to="/"><img src={`${process.env.PUBLIC_URL}/icon.png`} alt=":) " style={{ width: '30px', marginRight: '10px' }} />Maya Lee</NavBrand>
             <Bars onClick={toggleMenu} />
 
             <NavMenu>
