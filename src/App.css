@@ -1,39 +1,157 @@
+#root{
+  --color1: #544E61;
+  --color2:#EFF1F3;
+  --color3: #67597A;
+}
 .App {
   text-align: center;
   font-family: "Lato", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #544E61;
+  color: #EFF1F3;
+  margin: 50px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Ensure you have a script font for the effect */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/***********************************Home******************************************/
+
+
+.name {
+  font-family: 'Dancing Script', cursive;
+  width: fit-content;
+  font-size: 50px;
+  line-height: 1.2;
+  padding: 0 5px;
+  @media (max-width: 768px) {
+    font-size: 32px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* Animation for typing effect */
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 11ch;
   }
+}
+
+.animate-typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #EFF1F3;  /* Cursor effect */
+  width: 0; /* Initially no width */
+  animation: typing 4s steps(17) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Optional: To make the cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.description {
+  opacity: 0; 
+  animation: fadeIn 1s ease 5s forwards; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.desc-container{
+  height: 100%;
+  background-color: #EFF1F3;
+  color: #544E61;
+  border-radius: 15px;
+  box-shadow: 20px 10px 10px #67597A;
+  padding: 10px 20px;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: left;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
+
+.solid-lines {
+  padding-left:5px;
+  padding-bottom: 1px;
+  background-image: linear-gradient(var(--color3) 1px, transparent 1px);
+  background-size: 100% 30px;
+  line-height: 30px;
+  @media (max-width: 768px) {
+    padding-bottom: 10px;
+    background-size: 20px 22px; 
+    line-height: 22px;
+  }
+}
+
+
+/***********************************Projects******************************************/
+.project-page{
+  margin-top:70px;
+}
+
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-container{
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle default shadow */
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Enhanced hover effect */
+.card:hover {
+  transform: translateY(-8px); /* Lifts the card slightly more */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5)!important; /* Adds a more noticeable shadow */
+}
+
+/* Change Text Color on Hover */
+.card:hover .card-title {
+  color: #DB7F67; /* Changes title to a red shade */
+}
+
+.card:hover .card-text {
+  color: var(--color3); /* Changes text to a blue shade */
+}
+
+/***********************************About******************************************/
+
+.about-page{
+  margin-top: 70px;
+}
+
+.about-content{
+  text-align: left;
+}
+
+/***********************************Blog******************************************/
+
+.blog-page{
+  margin-top: 70px;
 }

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 // Navbar Container
 export const Nav = styled.nav`
-    background:rgb(102, 46, 9);
+    background: #67597A;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,8 @@ export const Nav = styled.nav`
     top: ${({ isVisible }) => (isVisible ? '0' : '-80px')}; /* Controls navbar visibility */
     left: 0;
     width: 100vw;
-    transition: top 0.3s ease-in-out; /* Smooth transition for hiding/showing navbar */
+    box-sizing: border-box;
+    transition: top 0.3s ease-in-out;
 `;
 
 
@@ -23,7 +24,7 @@ export const Nav = styled.nav`
 // color: rgb(144, 219, 176); not used - temp
 // Branding / Site Name
 export const NavBrand = styled(Link)`
-    color: rgb(255, 254, 240);
+    color: #EFF1F3;
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
@@ -32,7 +33,7 @@ export const NavBrand = styled(Link)`
     transition: 0.3s;
 
     &:hover {
-        color: #D3D3D3;
+        color: #DB7F67;
         transform: translateY(-5px);
     }
 `;
@@ -48,18 +49,18 @@ export const NavMenu = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-    color: #FFFFFF;
+    color: #EFF1F3;
     text-decoration: none;
     padding: 0 1rem;
     font-size: 1.4rem;
     transition: 0.3s;
 
     &.active {
-        color:#ffcc70;
+        color:#DB7F67;
     }
 
     &:hover {
-        color:rgb(170, 170, 170);
+        color:#DB7F67;
         transform: translateY(-5px);
     }
 `;
@@ -67,7 +68,7 @@ export const NavLink = styled(Link)`
 // Mobile Hamburger Icon
 export const Bars = styled(FaBars)`
     display: none;
-    color: rgb(255, 254, 240);
+    color: #EFF1F3;
 
     @media screen and (max-width: 768px) {
         display: block;
@@ -86,7 +87,7 @@ export const MobileMenu = styled.div`
     top: 60px;
     left: 0;
     width: 100%;
-    background: #222;
+    background: #67597A;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -99,5 +100,5 @@ export const CloseIcon = styled(FaTimes)`
     top: 15px;
     font-size: 2rem;
     cursor: pointer;
-    color: #FFFFFF;
+    color: #EFF1F3;
 `;

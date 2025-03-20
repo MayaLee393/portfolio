@@ -42,7 +42,7 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             // Check if the page is at the top or scrolled down
-            if (window.scrollY == 0) {
+            if (window.scrollY === 0) {
                 setShowNavbar(true);  // Show Navbar if at the top of the page
             } else {
                 setShowNavbar(false); // Hide Navbar if scrolled down
@@ -54,14 +54,13 @@ const Navbar = () => {
     }, []); // Empty dependency array to run once on mount
 
     return (
-        <Nav isVisible={showNavbar}> {/* Use isVisible here */}
-            <NavBrand to="/"><img src={`${process.env.PUBLIC_URL}/icon.png`} alt=":) " style={{ width: '30px', marginRight: '10px' }} />Maya Lee</NavBrand>
+        <Nav isVisible={showNavbar}>
+            <NavBrand to="/"  className="flex items-center"><img src={`${process.env.PUBLIC_URL}/icon.PNG`} alt=":) " className="w-[30px] mr-2"  />Maya Lee</NavBrand>
             <Bars onClick={toggleMenu} />
-
             <NavMenu>
                 <NavLink to="/projects" activeStyle>Projects</NavLink>
                 <NavLink to="/blog" activeStyle>Blog</NavLink>
-                <NavLink to="/about" activeStyle>About</NavLink>
+                <NavLink to="/about" activeStyle>About Me</NavLink>
             </NavMenu>
 
             {isOpen && (
@@ -70,7 +69,7 @@ const Navbar = () => {
                     <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
                     <NavLink to="/projects" onClick={toggleMenu}>Projects</NavLink>
                     <NavLink to="/blog" onClick={toggleMenu}>Blog</NavLink>
-                    <NavLink to="/about" onClick={toggleMenu}>About</NavLink>
+                    <NavLink to="/about" onClick={toggleMenu}>About Me</NavLink>
                 </MobileMenu>
             )}
         </Nav>
