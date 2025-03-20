@@ -1,9 +1,6 @@
 
 import './App.css';
 
-// import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap (if needed)
-// import { Container } from 'react-bootstrap';
-
 import Navbar from "./components/NavBar";
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./pages";

@@ -5,16 +5,16 @@
         "project_link": "https://github.com/MayaLee393/photo-gallery",
         "website_link": "https://mayalee393.github.io/photo-gallery/",
         "languages_tools": ["HTML", "CSS", "React"],
-        "description": "virtual gallery for my paintings",
+        "description": "Created a virtual gallery to showcase my paintings",
         "visible": true
     },
     {
         "id": 2,
         "name": "Pokemon Lookup",
-        "project_link": "https://github.com/MayaLee393/cs373-p4",
-        "website_link": "https://mayalee393.github.io/cs373-p4/",
+        "project_link": "https://github.com/MayaLee393/cs378-p4",
+        "website_link": "https://mayalee393.github.io/cs378-p4/",
         "languages_tools": ["HTML", "CSS", "React"],
-        "description": "used PokeAPI to fetch pokemon data",
+        "description": "Created an app that used PokeAPI to fetch pokemon data",
         "visible": true
     },
     {
@@ -39,9 +39,18 @@
         "id": 5,
         "name": "Pokemon ML",
         "project_link": "https://github.com/MayaLee393/Pokemon_ML",
-        "website_link": "https://github.com/MayaLee393/Pokemon_ML",
+        "website_link": "N/A",
         "languages_tools": ["Python", "Jupyter Notebook"],
         "description": "worked with a team to train ML algorithms to categorize Pokemon based on their stats",
+        "visible": true
+    },
+    {
+        "id": 6,
+        "name": "SpeakATX",
+        "project_link": "https://gitlab.com/steven.zheng1/cs373-spring-2025-group-23",
+        "website_link": "https://speakatx.me",
+        "languages_tools": ["HTML/CSS", "JavaScript", "React", "Python"],
+        "description": "Worked with a team to create a website that finds resources for non-English Speakers\nResources are found through api or webscrapping and uploaded to a AWS RDS\nOur api grabs data from the database to populate the website",
         "visible": true
     }
 ]

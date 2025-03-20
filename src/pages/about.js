@@ -27,7 +27,7 @@ const AboutPage = () => {
           target="_blank"  // Open in a new tab
           rel="noopener noreferrer" // For security reasons
         >
-        <button className="btn btn-primary">
+        <button className="btn">
           My Resume
         </button>
       </a>
