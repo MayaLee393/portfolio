@@ -1,0 +1,17 @@
+[
+    {
+      "id": "blog1",
+      "title": "blog 1",
+      "date": "2025-03-19",
+      "summary": "test.",
+      "image": "/images/portfolio-blog.png"
+    },
+    {
+      "id": "blog2",
+      "title": "Why I Use Markdown for Blogs",
+      "date": "2025-03-20",
+      "summary": "Markdown makes writing and maintaining blogs easy. Here's why I use it.",
+      "image": "/images/markdown-blog.png"
+    }
+  ]
+  
