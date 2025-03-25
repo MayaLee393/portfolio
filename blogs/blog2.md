@@ -1,9 +1,9 @@
 ---
 title: "Blog title"
-date: "2025-03-19"
+date: "03/24/2025"
 author: "Maya Lee"
 ---
 
-## Blog title
+## Blog title 2
 
 Blog content.....
