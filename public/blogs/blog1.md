@@ -1,9 +1,11 @@
 ---
-title: "How I Built My Portfolio"
-date: "2025-03-19"
+title: "Spring Break"
+date: "03/24/2025"
 author: "Maya Lee"
 ---
 
-## Blog 1
+## Houston Rodeo: Journey
+
+## Guadalupe Peak
 
 Testingggg

@@ -14,7 +14,7 @@ const BlogPost = () => {
     const fetchBlogPost = async () => {
       try {
         // Fetch the blog markdown file dynamically based on blogId
-        const response = await fetch(`/portfolio/${blogId}.md`);
+        const response = await fetch(`/portfolio/blogs/${blogId}.md`);
 
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -38,13 +38,10 @@ const BlogPost = () => {
 
   return (
     <div className="p-6 max-w-3xl mx-auto">
-      {/* Render the metadata */}
       <div className="mb-6">
         <h1 className="text-4xl font-bold">{metadata.title}</h1>
-        <p className="text-gray-500 mt-2">{metadata.date} | by {metadata.author}</p>
+        <p className="text-500 mt-2">{metadata.date} | by {metadata.author}</p>
       </div>
-
-      {/* Render the markdown content */}
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );

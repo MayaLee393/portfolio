@@ -23,17 +23,22 @@ const BlogList = () => {
     }, []); 
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {Array.isArray(blogs) && blogs.length === 0 ? (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {Array.isArray(blogs) && blogs.length === 0 ? (
           <p>Loading blogs...</p>
-        ) : (
+          ) : (
           blogs.map((blog) => (
-              <div key={blog.id} className="card-container w-full h-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <BlogCard key={blog.id} blog={blog} className="w-full h-full max-w-sm"/>
-              </div>
-            ))
+            <div key={blog.id} className="flex">
+              <BlogCard 
+                key={blog.id} 
+                blog={blog} 
+                className="w-full h-full flex flex-col items-stretch rounded-lg shadow-md"
+              />
+            </div>
+          ))
         )}
-    </div>
+      </div>
+
   );
 };
 
