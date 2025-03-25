@@ -5,7 +5,7 @@ const ProjectCard = ({
 }) => {
     return (
         <div >
-           <a href={projectItem.project_link} target="_blank" rel="noopener noreferrer" className="card text-decoration-none shadow-lg rounded-lg">
+           <a href={projectItem.project_link} target="_blank" rel="noopener noreferrer" className="card text-decoration-none shadow-lg rounded-lg hover:scale-105 transition-transform cursor-pointer">
                 <div className="card-body d-flex flex-column justify-content-between h-full" style={{ flex: 1 }}>
                     <h5 className="card-title text-lg font-bold">{projectItem.name}</h5>
                     {projectItem.description.split("\n").map((line, index) => (

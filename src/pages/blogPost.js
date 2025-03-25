@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import matter from "gray-matter";  // Import gray-matter to parse front matter
+import remarkGfm from 'remark-gfm';
+import remarkEmoji from 'remark-emoji';
+import matter from "gray-matter"; 
 import { Buffer } from 'buffer';
 global.Buffer = Buffer;
 
 const BlogPost = () => {
-  const { blogId } = useParams();  // Get the blogId from the URL
-  const [content, setContent] = useState("");  // Store the markdown content
-  const [metadata, setMetadata] = useState({});  // Store the front matter metadata
+  const { blogId } = useParams();  
+  const [content, setContent] = useState("");  
+  const [metadata, setMetadata] = useState({});  
 
   useEffect(() => {
     const fetchBlogPost = async () => {
       try {
-        // Fetch the blog markdown file dynamically based on blogId
         const response = await fetch(`/portfolio/blogs/${blogId}.md`);
 
         if (!response.ok) {
@@ -26,7 +27,6 @@ const BlogPost = () => {
         console.log("Parsed metadata:", data);
         console.log("Parsed content:", content);
 
-        // Set the front matter and content
         setMetadata(data);
         setContent(content);
       } catch (error) {
@@ -42,7 +42,9 @@ const BlogPost = () => {
         <h1 className="text-4xl font-bold">{metadata.title}</h1>
         <p className="text-500 mt-2">{metadata.date} | by {metadata.author}</p>
       </div>
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <div className="text-left">
+        <ReactMarkdown remarkPlugins={[remarkGfm, remarkEmoji]}>{content}</ReactMarkdown>
+      </div>
     </div>
   );
 };

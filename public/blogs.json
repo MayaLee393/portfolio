@@ -1,10 +1,10 @@
 [
     {
       "id": "blog1",
-      "title": "Spring Break",
+      "title": "Spring Break 2025",
       "date": "2025-03-24",
-      "summary": "test.",
-      "image": "/images/portfolio-blog.png"
+      "summary": "test",
+      "image": "/blog1-cover.jpg"
     },
     {
       "id": "blog2",
