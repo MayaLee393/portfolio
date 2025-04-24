@@ -49,8 +49,17 @@
         "name": "SpeakATX",
         "project_link": "https://gitlab.com/steven.zheng1/cs373-spring-2025-group-23",
         "website_link": "https://speakatx.me",
-        "languages_tools": ["HTML/CSS", "JavaScript", "React", "Python"],
+        "languages_tools": ["HTML/CSS", "JavaScript", "React", "Python", "AWS", "SQL"],
         "description": "Worked with a team to create a website that finds resources for non-English Speakers\nResources are found through api or webscrapping and uploaded to a AWS RDS\nOur api grabs data from the database to populate the website",
+        "visible": true
+    },
+    {
+        "id": 7,
+        "name": "BLOOM",
+        "project_link": "https://github.com/imeldaish/cs378-project-version-b",
+        "website_link": "https://imeldaish.github.io/cs378-project-version-b/#/onboarding",
+        "languages_tools": ["HTML/CSS", "JavaScript", "React"],
+        "description": "Worked with a team to conduct needfinding, user experiments with A/B testing to create a mental health app. ",
         "visible": true
     }
 ]
