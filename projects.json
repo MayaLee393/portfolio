@@ -33,7 +33,7 @@
         "website_link": "N/A",
         "languages_tools": ["Figma"],
         "description": "Created a prototype with a 3D aesthetic of the first page of a mood tracker app",
-        "visible": true
+        "visible": false
     },
     {
         "id": 5,
