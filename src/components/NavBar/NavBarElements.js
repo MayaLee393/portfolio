@@ -12,7 +12,7 @@ export const Nav = styled.nav`
     padding: 0 20px;
     z-index: 12;
     position: fixed;
-    top: ${({ isVisible }) => (isVisible ? '0' : '-80px')}; /* Controls navbar visibility */
+    top: ${({ isVisible }) => (isVisible ? '0' : '-60px')}; /* Controls navbar visibility */
     left: 0;
     width: 100vw;
     box-sizing: border-box;

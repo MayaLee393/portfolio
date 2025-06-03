@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { 
     Nav, NavBrand, NavLink, NavMenu, Bars, MobileMenu, CloseIcon 
@@ -39,19 +39,29 @@ const Navbar = () => {
         changeFavicon(`${process.env.PUBLIC_URL}/icon.png`);
     }, [location.pathname]);
 
+    const lastScrollY = useRef(0);
     useEffect(() => {
+
         const handleScroll = () => {
-            // Check if the page is at the top or scrolled down
-            if (window.scrollY === 0) {
-                setShowNavbar(true);  // Show Navbar if at the top of the page
+            const currentScrollY = window.scrollY;
+            //  console.log('scrollY:', currentScrollY, 'visible:', currentScrollY < lastScrollY.current, 'lastscrollY:', lastScrollY.current );
+
+            if (currentScrollY <= 0) {
+            setShowNavbar(true); // Always show at the top
+            } else if (currentScrollY < lastScrollY.current) {
+            setShowNavbar(true); // Scrolling up
             } else {
-                setShowNavbar(false); // Hide Navbar if scrolled down
+            setShowNavbar(false); // Scrolling down
             }
+
+            lastScrollY.current = currentScrollY;
+
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []); // Empty dependency array to run once on mount
+        }, []);
+
 
     return (
         <Nav isVisible={showNavbar}>

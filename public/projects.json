@@ -1,5 +1,35 @@
 [
     {
+        "id": 6,
+        "name": "SpeakATX",
+        "project_link": "https://gitlab.com/steven.zheng1/cs373-spring-2025-group-23",
+        "website_link": "N/A",
+        "languages_tools": ["HTML/CSS", "JavaScript", "React", "Python", "AWS", "SQL"],
+        "description": "Worked with a team to create a website that finds resources for non-English Speakers\nResources are found through api or webscrapping and uploaded to a AWS RDS\nOur api grabs data from the database to populate the website",
+        "visible": true,
+        "picture": "/projects/speakatx.webp"
+    },
+    {
+        "id": 7,
+        "name": "BLOOM",
+        "project_link": "https://github.com/imeldaish/cs378-project-version-b",
+        "website_link": "https://imeldaish.github.io/cs378-project-version-b/#/onboarding",
+        "languages_tools": ["HTML/CSS", "JavaScript", "React"],
+        "description": "Worked with a team to conduct needfinding, user experiments with A/B testing to create a mental health app. ",
+        "visible": true,
+        "picture": "/projects/BLOOM.png"
+    },
+    {
+        "id": 8,
+        "name": "Lazy Hands",
+        "project_link": "https://github.com/MayaLee393/Pokemon_ML",
+        "website_link": "N/A",
+        "languages_tools": ["Python", "Mediapipe", "OpenCV", "PyAutoGUI"],
+        "description": "Created a hand gesture detection program using mediapipe and wrote a script for each gesture to perform a different task",
+        "visible": true,
+        "picture": "/projects/handgesture.png"
+    },
+    {
         "id": 1,
         "name": "Photo Gallery",
         "project_link": "https://github.com/MayaLee393/photo-gallery",
@@ -23,7 +53,7 @@
         "project_link": "https://github.com/MayaLee393/wics-2025",
         "website_link": "https://mayalee393.github.io/wics-2025/",
         "languages_tools": ["HTML", "CSS", "React", "Python", "Firebase"],
-        "description": "worked with a team to create a better UI/UX for UT Dining Halls, populated using web-scrapping",
+        "description": "Worked with a team to create a better UI/UX for UT Dining Halls, populated using web-scrapping",
         "visible": true
     },
     {
@@ -33,24 +63,15 @@
         "website_link": "N/A",
         "languages_tools": ["Figma"],
         "description": "Created a prototype with a 3D aesthetic of the first page of a mood tracker app",
-        "visible": true
+        "visible": false
     },
     {
         "id": 5,
         "name": "Pokemon ML",
         "project_link": "https://github.com/MayaLee393/Pokemon_ML",
         "website_link": "N/A",
-        "languages_tools": ["Python", "Jupyter Notebook"],
+        "languages_tools": ["Python", "Jupyter Notebook", "Scikit-learn"],
         "description": "worked with a team to train ML algorithms to categorize Pokemon based on their stats",
-        "visible": true
-    },
-    {
-        "id": 6,
-        "name": "SpeakATX",
-        "project_link": "https://gitlab.com/steven.zheng1/cs373-spring-2025-group-23",
-        "website_link": "https://speakatx.me",
-        "languages_tools": ["HTML/CSS", "JavaScript", "React", "Python"],
-        "description": "Worked with a team to create a website that finds resources for non-English Speakers\nResources are found through api or webscrapping and uploaded to a AWS RDS\nOur api grabs data from the database to populate the website",
         "visible": true
     }
 ]

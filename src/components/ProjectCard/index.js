@@ -14,7 +14,18 @@ const ProjectCard = ({
                         </React.Fragment>
                     ))}
                     <hr></hr>
-                    <p className="card-text text-sm">
+                    <p className="card-text text-sm ">
+                        {projectItem.github_link !== "N/A" && (
+                            <a
+                                href={projectItem.github_link} // Path to the PDF in the public folder
+                                target="_blank"  // Open in a new tab
+                                rel="noopener noreferrer" // For security reasons
+                                >
+                                <button className="btn mb-2 mr-4">
+                                    Github
+                                </button>
+                            </a>
+                        )}
                         {projectItem.website_link !== "N/A" && (
                             <a
                                 href={projectItem.website_link} // Path to the PDF in the public folder

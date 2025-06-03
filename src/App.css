@@ -3,6 +3,7 @@
   --color2:#EFF1F3;
   --color3: #67597A;
 }
+
 .App {
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -41,7 +42,6 @@ button:focus-visible {
 
 /***********************************Home******************************************/
 
-
 .name {
   font-family: 'Dancing Script', cursive;
   width: fit-content;
@@ -69,7 +69,7 @@ button:focus-visible {
   white-space: nowrap;
   border-right: 2px solid #EFF1F3;  /* Cursor effect */
   width: 0; /* Initially no width */
-  animation: typing 4s steps(17) 1s forwards, blink 0.75s step-end infinite;
+  animation: typing 2s steps(17) 1s forwards, blink 0.75s step-end infinite;
 }
 
 /* Optional: To make the cursor blink */
@@ -81,7 +81,7 @@ button:focus-visible {
 
 .description {
   opacity: 0; 
-  animation: fadeIn 1s ease 5s forwards; 
+  animation: fadeIn 1s ease 1.5s forwards; 
 }
 
 @keyframes fadeIn {
@@ -119,6 +119,62 @@ button:focus-visible {
   }
 }
 
+.icon {
+  color: #EFF1F3;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: var(--color3);
+}
+
+/***********project section*********************/
+.project-section{
+  height: 95vh;
+  width: 100%;
+  
+}
+
+.project-header a{
+  color: var(--color2) !important;
+}
+
+.project-bar{
+ 
+}
+
+
+.project-picture{
+  background-color: var(--color3);
+  border-radius: 15px 0px 0px 15px;
+  margin: 0;
+  padding: 0;
+  
+}
+.project-picture img{
+  filter: blur(1px);
+  opacity: 70%;
+}
+
+.slanted-edge {
+  --p: 120px; /* control the shape (can be percentage) */
+  /* height: 180px; */
+  width: 50%;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+  border-radius: 15px 0px 0px 15px;
+  background: var(--color3);
+}
+
+.project-content{
+  border-radius: 0px 15px 15px 0px;
+  background-color: var(--color2);
+  color: var(--color1);
+ @media (max-width: 768px) {
+    padding:15px;
+    border-radius: 1rem;
+  }
+}
 
 /***********************************Projects******************************************/
 .project-page{
