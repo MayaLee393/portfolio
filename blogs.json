@@ -3,15 +3,15 @@
       "id": "blog1",
       "title": "Spring Break 2025",
       "date": "2025-03-24",
-      "summary": "test",
+      "summary": "I hiked for 8 hours and was severely disappointed at the rodeo.",
       "image": "/blog1-cover.jpg"
     },
     {
       "id": "blog2",
-      "title": "Dummy Blog",
-      "date": "2025-03-24",
-      "summary": "it's empty",
-      "image": "/images/markdown-blog.png"
+      "title": "Longhorn Run",
+      "date": "2025-04-12",
+      "summary": "Running isn't about the finish time. It's about the journey.",
+      "image": "/blog2-cover.jpg"
     }
   ]
   
