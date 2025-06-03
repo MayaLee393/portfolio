@@ -24,7 +24,7 @@
         "name": "Lazy Hands",
         "project_link": "https://github.com/MayaLee393/Pokemon_ML",
         "website_link": "N/A",
-        "languages_tools": ["Python", "Mediapipe", "Opencv", "Pyautogui"],
+        "languages_tools": ["Python", "Mediapipe", "OpenCV", "PyAutoGUI"],
         "description": "Created a hand gesture detection program using mediapipe and wrote a script for each gesture to perform a different task",
         "visible": true,
         "picture": "/projects/handgesture.png"
