@@ -31,7 +31,7 @@ const IndexPage = () => {
                     &emsp;I am a Computer Science student at The University of Texas at Austin. 
                     I have always had a strong passion for creative activities, such as building and 
                     painting, and that translates into my computer science work. 
-                    <br></br>&emsp;As a fun task to keep myself busy, I like to create useful websites and developing 
+                    <br></br>&emsp;As a fun task to keep myself busy, I like to design and develop 
                     programs that automate tasks I find repetitive or tedious.
                     My curiousity drives me to explore new technologies
                     to learn to keep myself engaged in fun projects.
@@ -58,7 +58,7 @@ const IndexPage = () => {
         
 
         <ProjectSection/>
-
+      <br/>
     </div>
 
   )

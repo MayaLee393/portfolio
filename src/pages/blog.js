@@ -5,7 +5,8 @@ import BlogPost from "./blogPost";
 const BlogPage = () => {
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Blogs</h1>
+      <h1 >Blogs</h1>
+      <p className="mb-4">Just some thoughts...</p>
       <Routes>
         <Route path="/" element={<BlogList />} />
         <Route path=":blogId" element={<BlogPost />} /> 

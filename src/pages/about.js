@@ -10,9 +10,17 @@ const AboutPage = () => {
       <div className='about-content'>
       <h2>Education</h2>
         <div className='education'>
-          School: The University of Texas at Austin, December 2025 <br/>
-          Major: Computer Science (BS) <br/>
-          Minor: Business <br/>
+        <ul>
+          <li>
+              School: The University of Texas at Austin, December 2025
+          </li>
+          <li>
+              Major: Computer Science (BS)
+          </li>
+          <li>
+            Minor: Business 
+          </li>
+        </ul>
         </div>
         <div className='skills'>
           <h2>Skills</h2>
@@ -22,6 +30,9 @@ const AboutPage = () => {
             </li>
             <li>
               Tools/Frameworks: Git, React, AWS, REST APIs, Pandas, Scikit-learn, Docker, Figma, Firebase 
+            </li>
+            <li>
+              Interests: painting, drawing, making crepe flowers
             </li>
           </ul>
         </div>

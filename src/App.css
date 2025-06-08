@@ -1,7 +1,8 @@
-#root{
-  --color1: #544E61;
+:root{
+  --color1: #f3def7;
   --color2:#EFF1F3;
-  --color3: #67597A;
+  --color3: #544E61;
+  --color4: #67597A;
 }
 
 .App {
@@ -9,11 +10,17 @@
   font-family: "Lato", sans-serif;
 }
 
-body {
-  background-color: #544E61;
-  color: #EFF1F3;
+body{
+  color: var(--color3);
   margin: 50px;
   text-align: center;
+
+  background:
+        linear-gradient(150deg, #9f82b7, transparent 30%),
+        linear-gradient(330deg, #cdbef8, transparent 30%),
+        linear-gradient(225deg, #cdbef8, #d9b3d7, #f2e1fa, #9f82b7);
+  
+  
 }
 
 button{
@@ -67,7 +74,7 @@ button:focus-visible {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #EFF1F3;  /* Cursor effect */
+  border-right: 2px solid var(--color3);  /* Cursor effect */
   width: 0; /* Initially no width */
   animation: typing 2s steps(17) 1s forwards, blink 0.75s step-end infinite;
 }
@@ -92,10 +99,10 @@ button:focus-visible {
 
 .desc-container{
   height: 100%;
-  background-color: #EFF1F3;
+  background-color: var(--color2);
   color: #544E61;
   border-radius: 15px;
-  box-shadow: 20px 10px 10px #67597A;
+  box-shadow: 20px 10px 10px var(--color3);
   padding: 10px 20px;
   line-height: 1.5;
   font-size: 20px;
@@ -119,8 +126,12 @@ button:focus-visible {
   }
 }
 
+.picture{
+  border: 5px double var(--color4);
+}
+
 .icon {
-  color: #EFF1F3;
+  color: var(--color3);
   transition: color 0.3s ease;
 }
 
@@ -136,7 +147,7 @@ button:focus-visible {
 }
 
 .project-header a{
-  color: var(--color2) !important;
+  color: var(--color3) !important;
 }
 
 .project-bar{
@@ -169,7 +180,7 @@ button:focus-visible {
 .project-content{
   border-radius: 0px 15px 15px 0px;
   background-color: var(--color2);
-  color: var(--color1);
+  color: var(--color3);
  @media (max-width: 768px) {
     padding:15px;
     border-radius: 1rem;
@@ -204,21 +215,23 @@ button:focus-visible {
 /* Enhanced hover effect */
 .card:hover {
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5)!important; /* Adds a more noticeable shadow */
+  color: var(--color3)
 }
 
 /* Change Text Color on Hover */
 .card:hover .card-title {
-  color: #DB7F67; /* Changes title to a red shade */
+  color: var(--color3); 
 }
 
-.card:hover .card-text {
-  color: var(--color3); /* Changes text to a blue shade */
-}
+
 
 /***********************************About******************************************/
 
 .about-page{
   margin-top: 70px;
+  background-color: var(--color2);
+  padding: 20px;
+  border-radius: 15px;
 }
 
 .about-content{
@@ -229,4 +242,13 @@ button:focus-visible {
 
 .blog-page{
   margin-top: 70px;
+}
+
+.blog-box{
+  background-color: var(--color2);
+}
+
+.back-arrow{
+  position: fixed;
+  left: 20px
 }

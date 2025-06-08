@@ -37,7 +37,7 @@ const ProjectSection = () => {
       
         <div className='project-section container text-center mt-4'>
           <div className='project-header text-left flex items-center justify-between mb-4'>
-              <h1 className="text-2xl md:text-4xl font-bold ">Projects</h1>
+              <h1 className="text-2xl font-bold md:text-4xl  ">Projects</h1>
               <Link to="/projects" className='text-base md:text-lg mr-4 hover:scale-125'>
               <div className='flex gap-4 no-underline'>
                     <div><p className='no-underline'>More Projects</p></div>
@@ -81,7 +81,7 @@ const ProjectSection = () => {
           
           
         </div>
-
+        <br/>
     </div>
   )
 }

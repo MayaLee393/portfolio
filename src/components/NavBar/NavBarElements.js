@@ -4,7 +4,9 @@ import styled from "styled-components";
 
 // Navbar Container
 export const Nav = styled.nav`
-    background: #67597A;
+    background:rgba(103, 89, 122, 0.5);
+    box-shadow: 0 0 5px 5px rgba(103, 89, 122, 0.5);
+    backdrop-filter: blur(5px);
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -33,7 +35,7 @@ export const NavBrand = styled(Link)`
     transition: 0.3s;
 
     &:hover {
-        color: #DB7F67;
+        color: #67597A;
         transform: translateY(-5px);
     }
 `;
@@ -56,11 +58,11 @@ export const NavLink = styled(Link)`
     transition: 0.3s;
 
     &.active {
-        color:#DB7F67;
+        color:#67597A;
     }
 
     &:hover {
-        color:#DB7F67;
+        color:#544E61;
         transform: translateY(-5px);
     }
 `;

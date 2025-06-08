@@ -41,7 +41,6 @@ const ProjectsPage = () => {
   return (
     <div className='project-page'>
       <h1 className='mb-4'>Projects</h1>
-      <p>Click on a card to open a project link</p>
       <div className="project-container justify-center gap-6">
         {Array.isArray(repositories) && repositories.length === 0 ? (
           <p>Loading projects...</p>
