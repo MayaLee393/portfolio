@@ -12,6 +12,13 @@
       "date": "2025-04-12",
       "summary": "Running isn't about the finish time. It's about the journey.",
       "image": "/blog2-cover.jpg"
+    },
+    {
+      "id": "blog3",
+      "title": "Hearthstone Comeback",
+      "date": "2025-06-08",
+      "summary": "After a long break, I started playing Hearthstone Battlegrounds again.",
+      "image": "/blog3-cover.jpg"
     }
   ]
   
