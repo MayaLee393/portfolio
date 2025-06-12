@@ -64,13 +64,13 @@ const Navbar = () => {
 
 
     return (
-        <Nav isVisible={showNavbar}>
+        <Nav $isvisible={showNavbar}>
             <NavBrand to="/"  className="flex items-center"><img src={`${process.env.PUBLIC_URL}/icon.PNG`} alt=":) " className="w-[30px] mr-2"  />Maya Lee</NavBrand>
             <Bars onClick={toggleMenu} />
             <NavMenu>
-                <NavLink to="/projects" activeStyle>Projects</NavLink>
-                <NavLink to="/blog" activeStyle>Blog</NavLink>
-                <NavLink to="/about" activeStyle>About Me</NavLink>
+                <NavLink to="/projects"  className={({ isActive }) => (isActive ? "active" : "")}>Projects</NavLink>
+                <NavLink to="/blogs"  className={({ isActive }) => (isActive ? "active" : "")}>Blogs</NavLink>
+                <NavLink to="/about"  className={({ isActive }) => (isActive ? "active" : "")}>About Me</NavLink>
             </NavMenu>
 
             {isOpen && (
@@ -78,7 +78,7 @@ const Navbar = () => {
                     <CloseIcon onClick={toggleMenu} />
                     <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
                     <NavLink to="/projects" onClick={toggleMenu}>Projects</NavLink>
-                    <NavLink to="/blog" onClick={toggleMenu}>Blog</NavLink>
+                    <NavLink to="/blogs" onClick={toggleMenu}>Blogs</NavLink>
                     <NavLink to="/about" onClick={toggleMenu}>About Me</NavLink>
                 </MobileMenu>
             )}

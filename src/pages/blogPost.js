@@ -28,8 +28,8 @@ const BlogPost = () => {
 
         // Parse the front matter and markdown content using gray-matter
         const { data, content } = matter(text);
-        console.log("Parsed metadata:", data);
-        console.log("Parsed content:", content);
+        // console.log("Parsed metadata:", data);
+        // console.log("Parsed content:", content);
 
         setMetadata(data);
         setContent(content);

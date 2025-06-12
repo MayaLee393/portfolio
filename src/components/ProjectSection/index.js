@@ -15,7 +15,7 @@ const ProjectSection = () => {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log("Fetched projects:", data);
+        // console.log("Fetched projects:", data);
         const project_array = []
         for(let i=0; i<id_array.length; i++) {
             const project = data.find(p => p.id === id_array[i]);
@@ -23,7 +23,7 @@ const ProjectSection = () => {
                 project_array.push(project);
             }
         }
-        console.log("display projects:", project_array);
+        // console.log("display projects:", project_array);
         setRepositories(project_array); 
         } catch (error) {
         console.error('Error fetching repositories:', error);
@@ -38,20 +38,18 @@ const ProjectSection = () => {
         <div className='project-section container text-center mt-4'>
           <div className='project-header text-left flex items-center justify-between mb-4'>
               <h1 className="text-2xl font-bold md:text-4xl  ">Projects</h1>
-              <Link to="/projects" className='text-base md:text-lg mr-4 hover:scale-125'>
-              <div className='flex gap-4 no-underline'>
-                    <div><p className='no-underline'>More Projects</p></div>
+                <Link to="/projects" className='text-base md:text-lg mr-4 hover:scale-125'>
+                <div className='flex gap-4 no-underline'>
+                    <div><p className='no-underline text-right'>More Projects</p></div>
                     <div><FaArrowRight /></div>
-              </div>
-                  
-
-              </Link>
+                </div>
+                </Link>
           </div>
           {Array.isArray(repositories) && repositories.length === 0 ? (
           <p>Loading projects...</p>
                 ) : (
                 repositories.map((repo) => (
-                    <div className='project-bar mobile-bar row mb-2 '>
+                    <div key={repo.id} className='project-bar mobile-bar row mb-2 '>
                         <div className='project-picture col-md-4 d-none d-md-block position-relative overflow-hidden'>
                             <img
                                 src={`${process.env.PUBLIC_URL}/${repo.picture}`}

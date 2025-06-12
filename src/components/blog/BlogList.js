@@ -12,7 +12,7 @@ const BlogList = () => {
             throw new Error(`HTTP error! Status: ${response.status}`);
           }
           const data = await response.json();
-          console.log("Fetched blogs:", data);
+          // console.log("Fetched blogs:", data);
           const reversedBlogs = data.reverse();
           setBlogs(reversedBlogs); 
         } catch (error) {

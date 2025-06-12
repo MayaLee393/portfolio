@@ -15,7 +15,7 @@ const ProjectsPage = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log("Fetched projects:", data);
+        // console.log("Fetched projects:", data);
         setRepositories(data); 
       } catch (error) {
         console.error('Error fetching repositories:', error);
@@ -40,7 +40,7 @@ const ProjectsPage = () => {
 
   return (
     <div className='project-page'>
-      <h1 className='mb-4'>Projects</h1>
+      <h1 style={{fontFamily:' "VT323", monospace'}} className='text-6xl mb-4'>Projects</h1>
       <div className="project-container justify-center gap-6">
         {Array.isArray(repositories) && repositories.length === 0 ? (
           <p>Loading projects...</p>

@@ -2,6 +2,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
+
 // Navbar Container
 export const Nav = styled.nav`
     background:rgba(103, 89, 122, 0.5);
@@ -14,7 +15,7 @@ export const Nav = styled.nav`
     padding: 0 20px;
     z-index: 12;
     position: fixed;
-    top: ${({ isVisible }) => (isVisible ? '0' : '-60px')}; /* Controls navbar visibility */
+    top: ${({ $isvisible }) => ($isvisible ? '0' : '-60px')}; /* Controls navbar visibility */
     left: 0;
     width: 100vw;
     box-sizing: border-box;
@@ -26,9 +27,11 @@ export const Nav = styled.nav`
 // color: rgb(144, 219, 176); not used - temp
 // Branding / Site Name
 export const NavBrand = styled(Link)`
+    font-family: "VT323", monospace;
+    letter-spacing: 2.5px;
     color: #EFF1F3;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 500;
     text-decoration: none;
     cursor: pointer;
 
@@ -59,11 +62,19 @@ export const NavLink = styled(Link)`
 
     &.active {
         color:#67597A;
+
+        @media screen and (max-width: 768px) {
+            color:#f3def7
+        }
     }
 
     &:hover {
         color:#544E61;
         transform: translateY(-5px);
+
+        @media screen and (max-width: 768px) {
+            color: rgb(229, 197, 255)
+        }
     }
 `;
 
@@ -89,7 +100,8 @@ export const MobileMenu = styled.div`
     top: 60px;
     left: 0;
     width: 100%;
-    background: #67597A;
+    background:rgba(103, 89, 122, 0.8); 
+    box-shadow: 0 0 5px 5px rgba(103, 89, 122, 0.5);
     display: flex;
     flex-direction: column;
     text-align: center;
