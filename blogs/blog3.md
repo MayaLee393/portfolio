@@ -22,7 +22,7 @@ but I don't think I'm skilled enough to explain how to pick or use them well, so
 just go over a couple of my recent games that I thought was interesting.
 
 ## Elemental End of Turn Build
- ![Elemental End of Turn Build](/portfolio/blogs/images/blog3-hs-1.png)
+ ![Elemental End of Turn Build](/portfolio/blogs/images/blog3-hs-1.PNG)
  In this game, I started to pivot towards playing an Elemental build after getting a trinket(Felemental one) that boosts my stats 
  in the tavern. Elementals generally focus on either having high tavern stats or high elemental generation. 
  After gaining tempo by boosting and constantly switching out my elementals with ones from the tavern, I 
@@ -41,7 +41,7 @@ just go over a couple of my recent games that I thought was interesting.
    left at the end of every turn. Natural Blessing gives all minions of the same type +3/+3, so all of my elementals will get stats. (edit: my friend also said this card wasn't good because the stats were weak, and that there are better cards I could have used instead)
 
 ## Amalgam and Mishmash Quilboar Build
- ![Amalgam and Mishmash Quilboar Build](/portfolio/blogs/images/blog3-hs-2.png)
+ ![Amalgam and Mishmash Quilboar Build](/portfolio/blogs/images/blog3-hs-2.PNG)
  In this game, I made a lot of silly mistakes, but it ended up being a fun play. Somehow, I got third even though I wasn't too sure what I was doing.
  - Mistake 1: I originally was playing an undead build, and got a really good tier card for it. I got a buddy that transformed the minion next to it into one of a higher tier. I forgot to move it away from an important undead minion that I wanted to keep, so I ended up losing it. Fortunately, it transformed into a good Quilboar, so I decided to transition and play for it.
  - Mistake 2: I accidentally selected the Mishmash trinket. With that trinket, you get an Amalgam, which has all types, and a Mishmash (also all types) which gains stats when the Amalgam gains stats. I realized that this works well with Quilboars since every time I played a blood gem (spell that gives stats) on the Amalgam, the Mishmash would also get it's stats. 
