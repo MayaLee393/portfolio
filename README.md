@@ -1,6 +1,9 @@
 # My Portfolio
 
 Welcome to my personal portfolio!
+
+[View site here](https://mayalee393.github.io/portfolio/)
+
 This is a React-based web application hosted on GitHub Pages. It showcases my projects, technical skills, and blogs. I designed this site to give visitors a quick way to learn more about who I am and what I’ve built.
 
 ## Features
